@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import HomeContent from "../Content";
+import HomeContent from "./Content";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
 
       <Image
         src="/globals/pattern.png"
-        className="absolute bottom-0 start-0"
+        className="absolute bottom-0 start-0 rotate-180"
         width={500}
         height={500}
         alt="pattern"

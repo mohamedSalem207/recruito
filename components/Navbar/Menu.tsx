@@ -26,12 +26,12 @@ export default function Menu() {
   const pathname = usePathname();
 
   return (
-    <ul className="flex flex-1 items-center justify-center gap-3 lg:gap-5">
+    <ul className="flex flex-1 items-center justify-center gap-5 lg:gap-7">
       {items.map((item, i) => (
         <li key={i}>
           <Link
             href={item.link}
-            className={`hover:bg-custom-gradient font-medium duration-500 bg-clip-text hover:text-transparent ${pathname === item.link ? "bg-custom-gradient bg-clip-text text-transparent" : "text-title"}`}
+            className={`font-semibold duration-300 hover:text-secondary ${pathname === item.link ? "bg-custom-gradient bg-clip-text text-transparent" : "text-title"}`}
           >
             {item.title}
           </Link>

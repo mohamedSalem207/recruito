@@ -1,8 +1,8 @@
-import Button from "../Globals/Button";
+import Button from "@/components/Globals/Button";
 
 export default function HomeContent() {
   return (
-    <div className="flex flex-col items-center lg:gap-8">
+    <div className="flex flex-col items-center py-[120px] lg:gap-8">
       <h2 className="text-center font-bold !leading-[66px] lg:text-[54px]">
         Revolutionize Your Hiring <br className="hidden lg:inline" /> Process
         with
@@ -11,7 +11,7 @@ export default function HomeContent() {
         </span>
       </h2>
 
-      <p className="text-title text-center lg:font-medium">
+      <p className="text-center text-title lg:font-medium">
         Your fully automated hiring assistant that sources, screens,
         <br className="hidden lg:inline" /> and interviews candidates
         effortlessly
