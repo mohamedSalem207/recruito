@@ -27,10 +27,20 @@ export default {
         title: "#0B1928",
         text: "#3E4757",
         border: "#848EA080",
+        "second-border": "#848EA033",
       },
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(134.83deg, #1F67E7 35.46%, #1AD7BE 100%)",
+      },
+      boxShadow: {
+        global: [
+          "0px 1px 2px 0px #0000000D",
+          "0px 3px 3px 0px #0000000A",
+          "0px 8px 5px 0px #00000008",
+          "0px 14px 6px 0px #00000003",
+          "0px 22px 6px 0px #00000000",
+        ].join(", "),
       },
     },
     screens: {

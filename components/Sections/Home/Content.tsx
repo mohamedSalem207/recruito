@@ -2,7 +2,7 @@ import Button from "@/components/Globals/Button";
 
 export default function HomeContent() {
   return (
-    <div className="flex flex-col items-center py-[120px] lg:gap-8">
+    <div className="flex flex-col items-center pb-[100px] pt-[250px] lg:gap-8">
       <h2 className="text-center font-bold !leading-[66px] lg:text-[54px]">
         Revolutionize Your Hiring <br className="hidden lg:inline" /> Process
         with
