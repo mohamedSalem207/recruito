@@ -18,11 +18,11 @@ export default function Card({ img }: CardProps) {
       </div>
 
       <div className="w-full space-y-1.5">
-        <div className="h-5 w-[80%] rounded-[20px] bg-[#E6E8EC4D] shadow-sm" />
+        <div className="h-5 w-[80%] rounded-[20px] bg-[#E6E8EC4D]" />
 
-        <div className="h-[14px] w-1/2 rounded-[20px] bg-[#E6E8EC4D] shadow-sm" />
+        <div className="h-[14px] w-1/2 rounded-[20px] bg-[#E6E8EC4D]" />
 
-        <div className="h-[14px] w-1/2 rounded-[20px] bg-[#E6E8EC4D] shadow-sm" />
+        <div className="h-[14px] w-1/2 rounded-[20px] bg-[#E6E8EC4D]" />
       </div>
     </div>
   );

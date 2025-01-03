@@ -115,12 +115,12 @@ export default function Features() {
             </div>
           </FeatureBox>
 
-          <FeatureBox start classes="lg:pt-7">
+          <FeatureBox start classes="lg:p-7">
             <Image
               src="/sections/features/ai-interview.png"
               height={305}
               width={400}
-              className="relative !w-[80%] object-cover"
+              className="relative !w-[85%] object-cover"
               alt="ai-interview"
               draggable={false}
             />
