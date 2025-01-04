@@ -8,7 +8,7 @@ type BenefitProps = {
 
 export default function Benefit({ icon, title, desc }: BenefitProps) {
   return (
-    <div className="flex flex-col items-center rounded-[10px] border border-second-border bg-[#152232] p-3.5 lg:p-7">
+    <div className="flex flex-col items-center rounded-[10px] border border-second-border bg-[#152232] p-3.5 duration-300 hover:-translate-y-2 lg:p-7">
       <div className="flex size-[60px] items-center justify-center rounded-[10px] border border-second-border">
         <Image
           src={`/sections/benefits/${icon}.svg`}
