@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import HomeContent from "./Content";
 import Autonomous from "../Autonomous";
@@ -6,7 +5,7 @@ import Autonomous from "../Autonomous";
 export default function Home() {
   return (
     <section className="relative">
-      <div className="absolute start-0 top-0 h-full lg:h-[75%] w-full bg-[url('/sections/home.jpg')] bg-cover bg-center bg-no-repeat">
+      <div className="absolute start-0 top-0 h-full w-full bg-[url('/sections/home.jpg')] bg-cover bg-center bg-no-repeat lg:h-[75%]">
         <Image
           src="/globals/pattern.svg"
           className="absolute end-0 top-0"
@@ -26,11 +25,9 @@ export default function Home() {
         />
       </div>
 
-      <Navbar />
-
       <div className="container relative">
         <HomeContent />
-    
+
         <Autonomous />
       </div>
     </section>

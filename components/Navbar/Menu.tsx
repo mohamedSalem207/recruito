@@ -33,6 +33,7 @@ export default function Menu({ onClose }: { onClose?: () => void }) {
           <Link
             href={item.link}
             className={`relative font-semibold duration-300 hover:text-secondary ${pathname === item.link ? "bg-custom-gradient bg-clip-text text-transparent" : "text-title"}`}
+            prefetch={false}
             onClick={onClose}
           >
             <span>{item.title}</span>

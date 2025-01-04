@@ -49,7 +49,10 @@ export default function Candidate({
 
       <div className="flex flex-wrap items-start justify-center gap-2.5">
         {skills.map((skill, i) => (
-          <div className="rounded-[35px] bg-[#E6E8EC4F] px-3.5 py-2 text-sm text-text lg:text-base">
+          <div
+            key={i}
+            className="rounded-[35px] bg-[#E6E8EC4F] px-3.5 py-2 text-sm text-text lg:text-base"
+          >
             {skill}
           </div>
         ))}

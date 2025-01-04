@@ -17,10 +17,6 @@ export default function Portal({ children }: { children: React.ReactNode }) {
 
       setPortalRoot(div);
     }
-
-    document.body.classList.add("overflow-hidden");
-
-    return () => document.body.classList.remove("overflow-hidden");
   }, []);
 
   if (!portalRoot) return null;

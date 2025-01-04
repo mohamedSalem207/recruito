@@ -21,6 +21,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 /* End of the swiper */
 
 export const metadata: Metadata = {
@@ -39,7 +40,9 @@ export default function RootLayout({
         className={`${instrumentSans.variable} antialiased`}
         suppressHydrationWarning={true}
       >
-        {children}
+        <Navbar />
+
+        <div className="min-h-[85vh]">{children}</div>
 
         <Footer />
 

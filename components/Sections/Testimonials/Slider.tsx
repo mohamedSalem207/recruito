@@ -1,8 +1,8 @@
 "use client";
 
 import Testimonial from "@/components/Cards/Testimonial";
-import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
 
 type TestimonialsSliderProps = {
   data: Testimonial[];
@@ -46,7 +46,7 @@ export default function TestimonialsSlider({ data }: TestimonialsSliderProps) {
         ))}
       </Swiper>
 
-      <div className="swiper-pagination testimonials-swiper-pagination relative !bottom-auto mt-5 lg:mt-7 w-full" />
+      <div className="swiper-pagination testimonials-swiper-pagination relative !bottom-auto mt-5 w-full lg:mt-7" />
     </>
   );
 }
