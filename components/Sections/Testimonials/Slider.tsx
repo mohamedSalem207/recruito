@@ -46,7 +46,7 @@ export default function TestimonialsSlider({ data }: TestimonialsSliderProps) {
         ))}
       </Swiper>
 
-      <div className="swiper-pagination testimonials-swiper-pagination relative !bottom-auto mt-5 w-full lg:mt-7" />
+      <div className="swiper-pagination testimonials-swiper-pagination relative !bottom-auto z-40 mt-5 w-full bg-white lg:mt-7" />
     </>
   );
 }
