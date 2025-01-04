@@ -13,10 +13,10 @@ export default function FeatureBox({
 }: FeatureBoxProps) {
   return (
     <div
-      className={`border-second-border relative rounded-[20px] border ${classes}`}
+      className={`relative rounded-[20px] border border-second-border ${classes} bg-white`}
     >
       <Image
-        src="/globals/feature-pattern.png"
+        src="/globals/feature-pattern.svg"
         className={`absolute top-0 object-cover ${start ? "start-0" : "end-0"}`}
         width={250}
         height={250}

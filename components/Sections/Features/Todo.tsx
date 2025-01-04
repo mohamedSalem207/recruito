@@ -5,10 +5,11 @@ import { useState } from "react";
 type TodoProps = {
   id: string;
   label: string;
+  number: number;
 };
 
-export default function Todo({ id, label }: TodoProps) {
-  const [check, setCheck] = useState(false);
+export default function Todo({ id, label, number }: TodoProps) {
+  const [check, setCheck] = useState(number !== 4 ? true : false);
 
   return (
     <label
@@ -19,7 +20,7 @@ export default function Todo({ id, label }: TodoProps) {
         id={id}
         type="checkbox"
         className="size-[20px] cursor-pointer select-none"
-        value=""
+        defaultChecked={check}
         onChange={() => setCheck((prev) => !prev)}
       />
 
