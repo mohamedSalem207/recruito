@@ -23,16 +23,17 @@ const items = [
   },
 ];
 
-export default function Menu() {
+export default function Menu({ onClose }: { onClose?: () => void }) {
   const pathname = usePathname();
 
   return (
-    <ul className="flex flex-1 flex-col items-start justify-center gap-5 lg:flex-row lg:items-center lg:gap-9">
+    <ul className="flex flex-1 flex-col items-start justify-center gap-3 lg:flex-row lg:items-center lg:gap-9">
       {items.map((item, i) => (
         <li key={i}>
           <Link
             href={item.link}
             className={`relative font-semibold duration-300 hover:text-secondary ${pathname === item.link ? "bg-custom-gradient bg-clip-text text-transparent" : "text-title"}`}
+            onClick={onClose}
           >
             <span>{item.title}</span>
 

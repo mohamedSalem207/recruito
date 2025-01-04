@@ -7,17 +7,23 @@ import { useState } from "react";
 import Menu from "./Menu";
 import Btn from "../Globals/Button";
 import Portal from "../Globals/Portal";
+import Modal from "../Globals/Modal";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function NavbarContent() {
-  const [menuModal, setMenuModal] = useState(true);
+  const [menuModal, setMenuModal] = useState(false);
 
   return (
     <>
-      {/* {menuModal && ( */}
-      <Portal>
-        <div className="fixed start-0 top-0 z-50 h-screen w-full bg-white"></div>
-      </Portal>
-      {/* )} */}
+      {menuModal && (
+        <Portal>
+          <Modal onClose={() => setMenuModal(false)}>
+            <Menu onClose={() => setMenuModal(false)} />
+
+            <Btn text="Contact US" classes="mt-5" />
+          </Modal>
+        </Portal>
+      )}
 
       <div className="hidden lg:block">
         <Menu />
