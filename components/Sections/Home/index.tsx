@@ -8,7 +8,7 @@ export default function Home() {
     <section className="relative">
       <div className="absolute start-0 top-0 h-[75%] w-full bg-[url('/sections/home.jpg')] bg-cover bg-center bg-no-repeat">
         <Image
-          src="/globals/pattern.png"
+          src="/globals/pattern.svg"
           className="absolute end-0 top-0"
           width={500}
           height={500}
@@ -17,7 +17,7 @@ export default function Home() {
         />
 
         <Image
-          src="/globals/pattern.png"
+          src="/globals/pattern.svg"
           className="absolute bottom-0 start-0 rotate-180"
           width={500}
           height={500}
