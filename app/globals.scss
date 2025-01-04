@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Start of the global colors variables */
+$primary: #1bd1c2;
+$secondary: #3390ff;
+$title: #0b1928;
+$border: #848ea080;
+$secondBorder: #848ea033;
+/* End of the global colors variables */
+
+/* Swiper pagination styles */
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px !important;
+  .swiper-pagination-bullet {
+    cursor: pointer !important;
+    width: 10px;
+    height: 10px;
+    background-color: $border !important;
+    border-radius: 50%;
+    &.swiper-pagination-bullet-active {
+      width: 20px;
+      border-radius: 5px;
+      background-color: #1f67e799 !important;
+    }
+  }
+}
+/* End of the swiper pagination styles */

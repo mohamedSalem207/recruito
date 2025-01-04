@@ -3,6 +3,8 @@ import FeatureBox from "./Box";
 import Card from "./Card";
 import Data from "./Data";
 import Todo from "./Todo";
+import Manager from "./Manager";
+import RoundedTitle from "@/components/Globals/RoundedTitle";
 
 const todos = [
   {
@@ -23,15 +25,28 @@ const todos = [
   },
 ];
 
+const managers = [
+  {
+    name: "Alex Martin",
+    img: "manager-1",
+  },
+  {
+    name: "Emma Rivera",
+    img: "manager-2",
+  },
+  {
+    name: "Ryan Lee",
+    img: "manager-3",
+  },
+];
+
 export default function Features() {
   return (
     <section className="py-20">
       <div className="container">
-        <h5 className="border-second-border mx-auto w-fit rounded-[30px] border px-7 py-2 text-sm font-medium text-secondary lg:text-base">
-          Features
-        </h5>
+        <RoundedTitle title="Features" />
 
-        <h3 className="my-5 text-center font-semibold lg:my-12 lg:text-3xl lg:font-bold">
+        <h3 className="mb-5 text-center font-semibold lg:my-12 lg:text-3xl lg:font-bold">
           Streamline your recruitment with <br className="hidden lg:inline" />
           our advanced features
         </h3>
@@ -108,7 +123,7 @@ export default function Features() {
           />
 
           <FeatureBox classes="lg:p-7 p-3">
-            <div className="border-second-border shadow-global relative space-y-2 rounded-[10px] border bg-white p-3 lg:space-y-3.5">
+            <div className="relative space-y-2 rounded-[10px] border border-second-border bg-white p-3 shadow-global lg:space-y-3.5">
               {todos.map((todo, i) => (
                 <Todo key={i} id={todo.id} label={todo.label} />
               ))}
@@ -120,7 +135,7 @@ export default function Features() {
               src="/sections/features/ai-interview.png"
               height={305}
               width={400}
-              className="relative !w-[85%] object-cover"
+              className="relative !w-[95%] object-cover shadow-sm"
               alt="ai-interview"
               draggable={false}
             />
@@ -145,6 +160,14 @@ export default function Features() {
             title={`Final Shortlist for the & <br className="hidden lg:inline" /> Line Manager`}
             text="Recruito presents a curated list of the top performers, complete with interview recordings and evaluations, so you can make a swift, confident hiring decision."
           />
+
+          <FeatureBox classes="lg:p-10 p-5">
+            <div className="relative space-y-3.5 rounded-[10px] lg:space-y-12">
+              {managers.map((manager, i) => (
+                <Manager key={i} {...manager} number={i + 1} />
+              ))}
+            </div>
+          </FeatureBox>
         </div>
       </div>
     </section>

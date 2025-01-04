@@ -1,12 +1,27 @@
 import type { Metadata } from "next";
-import { Instrument_Sans } from "next/font/google";
-import "./globals.scss";
-import Provider from "@/components/Provider";
 
+/* Start of the instrument\_sans font */
+import { Instrument_Sans } from "next/font/google";
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument-sans",
   subsets: ["latin"],
 });
+/* end of the instrument\_sans font */
+
+/* Main css file */
+import "./globals.scss";
+/* WEnd iof the main css file */
+
+/* Fontawesome */
+import "@/lib/fontawesome";
+/* End of the fontawesome */
+
+/* Swiper */
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import Footer from "@/components/Footer";
+/* End of the swiper */
 
 export const metadata: Metadata = {
   title: "Recruito",
@@ -24,7 +39,9 @@ export default function RootLayout({
         className={`${instrumentSans.variable} antialiased`}
         suppressHydrationWarning={true}
       >
-        <Provider children={children} />
+        {children}
+
+        <Footer />
       </body>
     </html>
   );

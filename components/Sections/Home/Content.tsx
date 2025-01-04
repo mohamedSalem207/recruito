@@ -20,7 +20,7 @@ export default function HomeContent() {
       <div className="flex items-center justify-center gap-3 lg:gap-5">
         <Button text="Start Your Free Trial" transparent />
 
-        <Button text="Request A Demo" />
+        <Button text="Request A Demo" vector />
       </div>
     </div>
   );
