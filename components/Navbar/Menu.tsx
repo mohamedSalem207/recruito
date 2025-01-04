@@ -27,7 +27,7 @@ export default function Menu() {
   const pathname = usePathname();
 
   return (
-    <ul className="flex flex-1 items-center justify-center gap-5 lg:gap-9">
+    <ul className="flex flex-1 flex-col items-start justify-center gap-5 lg:flex-row lg:items-center lg:gap-9">
       {items.map((item, i) => (
         <li key={i}>
           <Link

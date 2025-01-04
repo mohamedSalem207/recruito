@@ -54,10 +54,10 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="relative py-20">
+    <section className="relative py-10 pb-0 lg:py-20 lg:pb-20">
       <RoundedTitle title="Testimonials" />
 
-      <p className="mb-5 text-center font-semibold lg:mb-7 lg:text-[27px]">
+      <p className="mb-5 text-center text-sm font-semibold leading-normal lg:mb-7 lg:text-[27px]">
         Don’t just take our word for it—see
         <br className="hidden lg:inline" /> what our clients say about Recruito
         AI.

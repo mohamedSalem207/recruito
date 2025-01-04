@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Menu from "./Menu";
-import Button from "../Globals/Button";
+import Btn from "../Globals/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
 
 export default function Navbar() {
   return (
@@ -15,9 +17,17 @@ export default function Navbar() {
             draggable={false}
           />
 
-          <Menu />
+          <div className="hidden lg:block">
+            <Menu />
+          </div>
 
-          <Button text="Contact US" />
+          <div className="hidden lg:block">
+            <Btn text="Contact US" />
+          </div>
+
+          <div className="inline lg:hidden">
+            <FontAwesomeIcon icon={faBars} />
+          </div>
         </div>
       </div>
     </nav>

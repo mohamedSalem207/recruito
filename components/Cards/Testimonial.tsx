@@ -6,7 +6,7 @@ export default function Testimonial({
 }: Testimonial) {
   return (
     <div className="rounded-[10px] border border-second-border p-3 lg:p-5">
-      <div className="mb-5 flex items-center gap-3 lg:mb-7">
+      <div className="mb-3 flex items-center gap-2 lg:mb-7 lg:gap-3">
         <Image
           src={`/sections/testimonials/${img}.svg`}
           width={45}
@@ -16,14 +16,14 @@ export default function Testimonial({
           draggable={false}
         />
 
-        <div className="space-y-1">
+        <div className="space-y-0.5 text-sm lg:space-y-1 lg:text-base">
           <h5 className="text-title">{name}</h5>
 
           <h6 className="text-border">{job_title}</h6>
         </div>
       </div>
 
-      <p className="px-3 text-text lg:px-5">{text}</p>
+      <p className="px-3 text-sm text-text lg:px-5 lg:text-base">{text}</p>
     </div>
   );
 }

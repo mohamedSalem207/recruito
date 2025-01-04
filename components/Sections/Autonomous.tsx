@@ -3,7 +3,7 @@ import Title from "../Globals/Title";
 
 export default function Autonomous() {
   return (
-    <section>
+    <section className="hidden xl:block">
       <div className="container">
         <div className="relative h-fit rounded-[30px] bg-gradient-to-b from-[#CFD8E34D] to-transparent p-5">
           <Image

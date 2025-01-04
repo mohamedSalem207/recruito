@@ -10,7 +10,7 @@ type TestimonialsSliderProps = {
 
 const breakpoints = {
   0: {
-    slidesPerView: 1.2,
+    slidesPerView: 1.1,
   },
   992: {
     slidesPerView: 2,
@@ -46,7 +46,7 @@ export default function TestimonialsSlider({ data }: TestimonialsSliderProps) {
         ))}
       </Swiper>
 
-      <div className="swiper-pagination testimonials-swiper-pagination relative !bottom-auto mt-7 w-full" />
+      <div className="swiper-pagination testimonials-swiper-pagination relative !bottom-auto mt-5 lg:mt-7 w-full" />
     </>
   );
 }

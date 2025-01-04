@@ -67,10 +67,10 @@ const managers = [
 
 export default function Features() {
   const contentClass =
-    "grid grid-cols-1 items-center gap-3 lg:grid-cols-2 lg:gap-5";
+    "grid grid-cols-1 items-center gap-3 xl:grid-cols-2 xl:gap-5";
 
   return (
-    <section className="py-20">
+    <section className="py-10 lg:py-20">
       <div className="container">
         <RoundedTitle title="Features" />
 
@@ -110,7 +110,7 @@ export default function Features() {
               />
 
               <FeatureBox classes="px-3 pb-3 pt-5 lg:px-5 lg:pt-28 lg:pb-10">
-                <div className="relative flex w-full items-center justify-between gap-3 lg:gap-5">
+                <div className="relative flex w-full flex-col items-center justify-between gap-5 lg:flex-row">
                   {Array.from(Array(2), (_, i) => (
                     <Candidate key={i} {...candidates[i]} />
                   ))}
@@ -137,7 +137,7 @@ export default function Features() {
 
           <div className="container">
             <div className={contentClass}>
-              <FeatureBox start classes="p-5 lg:p-10">
+              <FeatureBox start classes="p-5 lg:p-10 lg:order-1 order-2">
                 <Image
                   src="/globals/search.svg"
                   width={150}
@@ -152,11 +152,11 @@ export default function Features() {
                     <Card img="1" />
                   </div>
 
-                  <div className="w-[80%]">
+                  <div className="w-[90%] lg:w-[80%]">
                     <Card img="2" />
                   </div>
 
-                  <div className="w-[60%]">
+                  <div className="w-[80%] lg:w-[60%]">
                     <Card img="3" />
                   </div>
                 </div>
@@ -165,7 +165,7 @@ export default function Features() {
               <Data
                 title={`Automated Resume <br className="hidden lg:inline" /> Screening & Filtering`}
                 text="Our AI instantly sorts and prioritizes resumes, highlighting only the strongest matches and discarding unqualified applicants."
-                classes="lg:ps-20"
+                classes="xl:ps-20 lg:order-2 order-1"
               />
             </div>
           </div>
@@ -216,7 +216,7 @@ export default function Features() {
 
           <div className="container">
             <div className={contentClass}>
-              <FeatureBox start classes="lg:p-7">
+              <FeatureBox start classes="lg:p-7 lg:order-1 order-2">
                 <Image
                   src="/sections/features/ai-interview.png"
                   height={305}
@@ -230,7 +230,7 @@ export default function Features() {
                   src="/sections/features/interview-score.png"
                   height={190}
                   width={165}
-                  className="absolute end-0 top-1/4 object-cover"
+                  className="absolute top-1/4 object-cover sm:end-0"
                   alt="interview-score"
                   draggable={false}
                 />
@@ -239,7 +239,7 @@ export default function Features() {
               <Data
                 title="AI Video Interviews"
                 text="An AI-driven virtual interviewer conducts dynamic, adaptive interviews, capturing both technical insights and soft skills. Everything is entirely hands-free."
-                classes="lg:ps-20"
+                classes="xl:ps-20 lg:order-2 order-1"
               />
             </div>
           </div>

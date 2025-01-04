@@ -10,6 +10,16 @@ $border: #848ea080;
 $secondBorder: #848ea033;
 /* End of the global colors variables */
 
+/* Start of the global styles */
+a,
+input,
+button,
+select,
+textarea {
+  outline: none;
+}
+/* End of the global styles */
+
 /* Swiper pagination styles */
 .swiper-pagination {
   display: flex;

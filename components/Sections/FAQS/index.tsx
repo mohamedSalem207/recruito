@@ -42,7 +42,7 @@ const faqs = [
 
 export default function FAQS() {
   return (
-    <section className="relative py-20">
+    <section className="relative py-10 pb-0 lg:py-20 lg:pb-20">
       <div className="absolute start-0 top-0 h-3/4 w-full bg-[#848EA00D] bg-[url('/sections/FAQS/bg.png')] bg-center bg-no-repeat" />
 
       <div className="container relative">

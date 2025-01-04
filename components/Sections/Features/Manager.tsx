@@ -19,10 +19,10 @@ export default function LineManager({ img, name, number }: LineManagerProps) {
       />
 
       <div
-        className={`flex flex-grow items-center justify-between rounded-[10px] border border-second-border p-3 shadow-global ${number === 1 && "-rotate-[2deg]"} ${number === 3 && "rotate-[2deg]"}`}
+        className={`flex flex-grow items-center justify-between rounded-[10px] border border-second-border p-2 shadow-global lg:p-3 ${number === 1 && "-rotate-[2deg]"} ${number === 3 && "rotate-[2deg]"}`}
       >
         <h5
-          className="max-w-[70%] truncate font-medium text-[#848EA0] lg:text-lg"
+          className="max-w-[70%] truncate text-sm text-[#848EA0] lg:text-lg lg:font-medium"
           title={name}
         >
           {name}

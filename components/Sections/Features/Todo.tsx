@@ -19,13 +19,13 @@ export default function Todo({ id, label, number }: TodoProps) {
       <input
         id={id}
         type="checkbox"
-        className="size-[20px] cursor-pointer select-none"
+        className="size-4 cursor-pointer select-none lg:size-5"
         defaultChecked={check}
         onChange={() => setCheck((prev) => !prev)}
       />
 
       <h5
-        className={`flex-grow cursor-pointer rounded-[10px] border border-second-border p-3 ${check ? "text-border line-through" : "text-title"}`}
+        className={`flex-grow cursor-pointer rounded-[10px] border border-second-border p-3 text-sm lg:text-base ${check ? "text-border line-through" : "text-title"}`}
       >
         {label}
       </h5>

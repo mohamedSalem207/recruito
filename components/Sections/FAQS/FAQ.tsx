@@ -25,8 +25,8 @@ export default function FAQ({ data: { question, answer }, first }: FAQProps) {
     >
       {({ open }) => (
         <>
-          <DisclosureButton className="flex w-full items-center justify-between p-4 text-title">
-            <h5 className="font-medium lg:text-lg lg:font-semibold">
+          <DisclosureButton className="flex w-full items-start justify-between gap-3 p-4 text-title lg:items-center">
+            <h5 className="text-start text-sm font-medium lg:text-lg lg:font-semibold">
               {question}
             </h5>
 
@@ -34,7 +34,7 @@ export default function FAQ({ data: { question, answer }, first }: FAQProps) {
           </DisclosureButton>
 
           <DisclosurePanel
-            className="p-4 pt-1 text-text"
+            className="p-4 pt-1 text-xs text-text lg:text-base"
             dangerouslySetInnerHTML={{ __html: answer }}
           />
         </>

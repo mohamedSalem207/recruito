@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#848EA00D] py-5 font-medium text-text lg:py-7">
       <div className="container">
-        <div className="mb-5 flex items-center justify-between lg:mb-7">
+        <div className="mb-5 flex flex-col items-center justify-center gap-5 md:flex-row md:justify-between lg:mb-7">
           <Link href="/">
             <Image
               src="/logo.svg"
@@ -55,7 +55,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex items-center justify-between text-xs lg:text-sm">
+        <div className="flex flex-col-reverse items-center justify-center gap-5 text-xs md:flex-row md:justify-between lg:text-sm">
           <p>
             &copy; {new Date().getFullYear()} Recruito AI . All rights reserved
           </p>

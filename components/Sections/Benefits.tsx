@@ -22,10 +22,10 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section className="relative bg-title py-20">
+    <section className="relative bg-title py-10 lg:py-20">
       <Image
         src="/sections/benefits/left.svg"
-        className="absolute bottom-0 start-0"
+        className="absolute bottom-0 start-0 -top-[70px] rotate-180 lg:top-auto lg:rotate-0"
         width={400}
         height={400}
         alt="benefit"
@@ -34,7 +34,7 @@ export default function Benefits() {
 
       <Image
         src="/sections/benefits/right.svg"
-        className="absolute bottom-0 end-0"
+        className="absolute -bottom-[70px] end-0 lg:bottom-0"
         width={400}
         height={400}
         alt="benefit"
@@ -49,7 +49,7 @@ export default function Benefits() {
           Recruito AI for your hiring needs.
         </p>
 
-        <div className="md:grid-col-2 grid grid-cols-12 gap-3 lg:grid-cols-3 lg:gap-5">
+        <div className="md:grid-col-2 grid grid-cols-1 gap-3 lg:grid-cols-3 lg:gap-5">
           {benefits.map((benefit, i) => (
             <Benefit key={i} {...benefit} />
           ))}

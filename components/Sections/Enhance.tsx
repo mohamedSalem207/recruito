@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Button from "../Globals/Button";
+import Btn from "../Globals/Button";
 
 export default function Enhance() {
   return (
-    <section className="relative flex items-center justify-center p-20 lg:py-24">
+    <section className="relative flex items-center justify-center py-10 lg:py-24">
       <Image
         src="/sections/enhance/right.jpg"
         height={300}
@@ -36,12 +36,14 @@ export default function Enhance() {
             </div>
           </div>
 
-          <p className="text-center font-semibold lg:text-[27px]">
+          <p className="relative text-center font-semibold lg:text-[27px]">
             Ready to enhance your <br className="hidden lg:inline" />
             hiring process ?
           </p>
 
-          <Button text="Request A Demo" vector />
+          <div className="relative">
+            <Btn text="Request A Demo" vector />
+          </div>
         </div>
       </div>
     </section>
